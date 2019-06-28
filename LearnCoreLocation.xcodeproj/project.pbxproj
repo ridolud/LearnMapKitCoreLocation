@@ -12,6 +12,7 @@
 		7F6D5CC722C3DBC50027905E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6D5CC522C3DBC50027905E /* Main.storyboard */; };
 		7F6D5CC922C3DBC60027905E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6D5CC822C3DBC60027905E /* Assets.xcassets */; };
 		7F6D5CCC22C3DBC60027905E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6D5CCA22C3DBC60027905E /* LaunchScreen.storyboard */; };
+		7FE56AB522C518960005C211 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6D5CD422C3DBE90027905E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7F6D5CC822C3DBC60027905E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F6D5CCB22C3DBC60027905E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F6D5CCD22C3DBC60027905E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F6D5CD422C3DBE90027905E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE56AB522C518960005C211 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				7F6D5CC022C3DBC50027905E /* LearnCoreLocation */,
 				7F6D5CBF22C3DBC50027905E /* Products */,
+				7F6D5CD322C3DBE90027905E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				7F6D5CCD22C3DBC60027905E /* Info.plist */,
 			);
 			path = LearnCoreLocation;
+			sourceTree = "<group>";
+		};
+		7F6D5CD322C3DBE90027905E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D5CD422C3DBE90027905E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					7F6D5CBD22C3DBC50027905E = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -283,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = LearnCoreLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = LearnCoreLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
